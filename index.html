@@ -16,6 +16,22 @@
         <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .navbar-brand {
+                margin-left: 80px; /* Add margin to the left to clear the logo */
+            }
+            @media (max-width: 767px) {
+                .navbar-brand {
+                    margin-left: 0; /* Reset margin on small screens */
+                    text-align: center; /* Center align the brand */
+                    width: 100%;
+                }
+                .navbar img {
+                    position: static; /* Reset position to default */
+                    margin: 0 auto; /* Center the logo */
+                }
+            }
+        </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
