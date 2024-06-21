@@ -1,99 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Vitor Miranda</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <style>
+<html lang="pt">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Vitor Miranda</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    
+    <style>
+        .navbar-brand {
+            display: flex;
+            align-items: center; /* Alinha verticalmente */
+        }
+        .navbar-brand img {
+            margin-right: 10px; /* Espaçamento entre a imagem e o texto */
+            border-radius: 30%; /* Arredonda a imagem */
+        }
+        .navbar-brand .brand-text {
+            margin-left: auto; /* Empurra o texto para a direita */
+        }
+        .navbar-toggler {
+            margin-left: auto; /* Empurra o botão do menu para a direita */
+        }
+        @media (max-width: 767px) {
             .navbar-brand {
-                margin-left: 80px; /* Add margin to the left to clear the logo */
+                text-align: center; /* Centraliza o texto e a imagem */
+                justify-content: center; /* Centraliza horizontalmente */
             }
-            @media (max-width: 767px) {
-                .navbar-brand {
-                    margin-left: 0; /* Reset margin on small screens */
-                    text-align: center; /* Center align the brand */
-                    width: 100%;
-                }
-                .navbar img {
-                    position: static; /* Reset position to default */
-                    margin: 0 auto; /* Center the logo */
-                }
+            .navbar-brand img {
+                margin-right: 0; /* Remove o espaçamento entre a imagem e o texto em telas pequenas */
             }
-        </style>
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
-            <div class="container">
-                <img src="assets/img/LogoVitor.jpg" width="60" height="60" style="position: absolute; left: 0;border-radius: 30%;" />
-                <a class="navbar-brand" href="#page-top">Vitor Miranda</a>     
-                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    Menu
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre mim</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
-                    </ul>
-                </div>
+            .navbar-brand .brand-text {
+                margin-left: 0; /* Remove a margem do texto em telas pequenas */
+            }
+        }
+    </style>
+
+</head>
+<body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+        <div class="container">
+            <img src="assets/img/LogoVitor.jpg" width="60" height="60" style="border-radius: 30%;" />
+            <a class="navbar-brand" href="#page-top">Vitor Miranda</a>
+            <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre mim</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
+                </ul>
             </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead bg-primary text-white text-center" style="background-image: url('assets/img/fundo_mandarim.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: #ffffff;">
-            
-                <!-- Masthead Avatar Image-->
-                <!-- Masthead Heading-->
-                <h1 class="masthead-heading text-uppercase mb-0"><br><br><br><br><br><br><br></h1>
-                <!-- Icon Divider-->
-                
-                <!-- Masthead Subheading-->
-                <p class="masthead-subheading font-weight-light mb-0"></p>
-            
-        </header>
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fa-solid fa-camera"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Grid Items-->
-                <div class="row justify-content-center">
-                    <!-- Portfolio Item 1-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Logo Clube mandarim.jpg" alt="..." />
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead bg-primary text-white text-center" style="background-image: url('assets/img/fundo_mandarim.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; color: #ffffff;">
+        <h1 class="masthead-heading text-uppercase mb-0"><br><br><br><br><br><br><br></h1>
+        <p class="masthead-subheading font-weight-light mb-0"></p>
+    </header>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fa-solid fa-camera"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Logo Clube mandarim.jpg" alt="..." />
                     </div>
-                    <!-- Portfolio Item 2-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/portfolio/Medalhas.jpg" alt="..." />
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                         </div>
+                        <img class="img-fluid" src="assets/img/portfolio/Medalhas.jpg" alt="..." />
+                    </div>
                     </div>
                     <!-- Portfolio Item 3-->
                     <div class="col-md-6 col-lg-4 mb-5">
@@ -176,7 +178,7 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">O meu nome é Vitor Miranda e sou um criador apaixonado de mandarins gigante. Desde jovem, sempre fui fascinado pelo mundo das aves. O encanto que sentia ao observar os seus comportamentos e ouvir os seus cantos acabou por me levar a descobrir a criação de mandarins gigante, uma variante dos pequenos mandarins, conhecidos pela sua beleza e robustez.</p></div>
+                    <div class="col-lg-4 ms-auto"><p class="lead">Eu sou Vitor Miranda, um criador apaixonado de mandarins gigante. Desde jovem, sempre fui fascinado pelo mundo das aves. O encanto que sentia ao observar os seus comportamentos e ouvir os seus cantos acabou por me levar a descobrir a criação de mandarins gigante, uma variante dos pequenos mandarins, conhecidos pela sua beleza e robustez.</p></div>
                     <div class="col-lg-4 me-auto"><p class="lead">Ao longo dos anos, aprendi muito sobre genética, alimentação e cuidados específicos necessários para criar mandarins saudáveis e bonitos. A minha rotina envolve garantir que cada ave recebe a melhor nutrição, um ambiente limpo e adequado, e bastante atenção para monitorar o seu bem-estar.</p></div>
                 </div>
                 
