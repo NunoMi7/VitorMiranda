@@ -11109,3 +11109,14 @@ html {
 .carousel-control-prev, .carousel-control-next {
   width: 5%;
 }
+
+.page-section-content {
+  display: none;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.portfolio-item {
+  margin-bottom: 30px; /* Espaçamento entre os itens */
+}

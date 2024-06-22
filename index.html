@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/css/bootstrap.min.css">
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     
@@ -51,7 +53,7 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <img src="assets/img/LogoVitor.jpg" width="60" height="60" style="border-radius: 30%;" />
+            <img src="assets/img/LogoVitor.jpg" width="60" height="60" style="border-radius: 30%; margin-right: 40px;"  />
             <a class="navbar-brand" href="#page-top">Vitor Miranda</a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -71,120 +73,140 @@
         <h1 class="masthead-heading text-uppercase mb-0"><br><br><br><br><br><br><br></h1>
         <p class="masthead-subheading font-weight-light mb-0"></p>
     </header>
-    <!-- Portfolio Section-->
-    <section class="page-section portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-            <div class="divider-custom">
-                <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fa-solid fa-camera"></i></div>
-                <div class="divider-custom-line"></div>
+
+   <!-- Portfolio Section-->
+   <section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0 cursor-pointer" id="portfolio-heading">Portfolio</h2>
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fa-solid fa-camera"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="row justify-content-center page-section-content">
+            <div class="col-md-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/Logo Clube mandarim.jpg" alt="..." />
+                </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+            <div class="col-md-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/portfolio/Medalhas.jpg" alt="..." />
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white">
+                            <i class="fas fa-plus fa-3x"></i>
                         </div>
-                        <img class="img-fluid" src="assets/img/portfolio/Logo Clube mandarim.jpg" alt="..." />
+                    </div>
+                    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="img-fluid" src="assets/img/campeao.jpg" alt="Imagem 1">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="assets/img/premios2.jpg" alt="Imagem 2">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="assets/img/premios.jpg" alt="Imagem 3">
+                            </div>
+                            <div class="carousel-item">
+                                <img class="img-fluid" src="assets/img/premios3.jpg" alt="Imagem 4">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                        </div>
-                        <img class="img-fluid" src="assets/img/portfolio/Medalhas.jpg" alt="..." />
-                    </div>
-                    </div>
-                    <!-- Portfolio Item 3-->
-                    <div class="col-md-6 col-lg-4 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white">
-                                    <i class="fas fa-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img class="img-fluid" src="assets/img/campeao.jpg" alt="Imagem 1">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-fluid" src="assets/img/premios2.jpg" alt="Imagem 2">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img class="img-fluid" src="assets/img/premios.jpg" alt="Imagem 3">
-                                    </div>  
-                                    <div class="carousel-item">
-                                        <img class="img-fluid" src="assets/img/premios3.jpg" alt="Imagem 4 ">
-                                    </div>
-                                </div>
-                                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                
-                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-                    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-                    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-                    
-                    <!-- Portfolio Item 4-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/Ave1-bg.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 5-->
-                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/bochecha_cinzenta.jpg" alt="..." />
-                        </div>
-                    </div>
-                    <!-- Portfolio Item 6-->
-                    <div class="col-md-6 col-lg-4">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/avesdupla.jpg" alt="..." />
-                        </div>
-                    </div> 
             </div>
-        </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">Sobre mim</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
+            <div class="col-md-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/Ave1-bg.jpg" alt="..." />
                 </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Eu sou Vitor Miranda, um criador apaixonado de mandarins gigante. Desde jovem, sempre fui fascinado pelo mundo das aves. O encanto que sentia ao observar os seus comportamentos e ouvir os seus cantos acabou por me levar a descobrir a criação de mandarins gigante, uma variante dos pequenos mandarins, conhecidos pela sua beleza e robustez.</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">Ao longo dos anos, aprendi muito sobre genética, alimentação e cuidados específicos necessários para criar mandarins saudáveis e bonitos. A minha rotina envolve garantir que cada ave recebe a melhor nutrição, um ambiente limpo e adequado, e bastante atenção para monitorar o seu bem-estar.</p></div>
-                </div>
-                
-                
             </div>
-        </section>
+            <div class="col-md-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/bochecha_cinzenta.jpg" alt="..." />
+                </div>
+            </div>
+            <div class="col-md-4 mb-5">
+                <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                    </div>
+                    <img class="img-fluid" src="assets/img/avesdupla.jpg" alt="..." />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section-->
+<section class="page-section bg-primary text-white mb-0" id="about">
+    <div class="container">
+        <!-- About Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white cursor-pointer" id="about-heading">Sobre mim</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- About Section Content-->
+        <div class="row page-section-content">
+            <div class="col-lg-4 ms-auto">
+                <p class="lead">Eu sou Vitor Miranda, um criador apaixonado de mandarins gigante. Desde jovem, sempre fui fascinado pelo mundo das aves. O encanto que sentia ao observar os seus comportamentos e ouvir os seus cantos acabou por me levar a descobrir a criação de mandarins gigante, uma variante dos pequenos mandarins, conhecidos pela sua beleza e robustez.</p>
+            </div>
+            <div class="col-lg-4 me-auto">
+                <p class="lead">Ao longo dos anos, aprendi muito sobre genética, alimentação e cuidados específicos necessários para criar mandarins saudáveis e bonitos. A minha rotina envolve garantir que cada ave recebe a melhor nutrição, um ambiente limpo e adequado, e bastante atenção para monitorar o seu bem-estar.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.getElementById('portfolio-heading').addEventListener('click', function() {
+        var portfolioContent = document.querySelector('.portfolio .page-section-content');
+        if (portfolioContent.style.display === 'none' || portfolioContent.style.display === '') {
+            portfolioContent.style.display = 'block';
+        } else {
+            portfolioContent.style.display = 'none';
+        }
+    });
+    
+    document.getElementById('about-heading').addEventListener('click', function() {
+        var aboutContent = document.querySelector('#about .page-section-content');
+        if (aboutContent.style.display === 'none' || aboutContent.style.display === '') {
+            aboutContent.style.display = 'block';
+        } else {
+            aboutContent.style.display = 'none';
+        }
+    });
+</script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+
         <!-- Contact Section-->
         <section class="page-section" id="contact">
             <div class="container">
